@@ -1,0 +1,75 @@
+/* VARIABLES */
+/*----------------------------------*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000a28;
+  position: relative;
+}
+
+.contentBlock {
+  width: 90vw;
+  height: 90vh;
+  border: 5px solid #fbf250;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+header {
+  height: 30%;
+  width: 100%;
+}
+
+header #topSection, header #bottomSection {
+  width: 100%;
+  border-bottom: 5px solid #fbf250;
+}
+
+header #topSection span, header #bottomSection span {
+  color: #fbf250;
+}
+
+header #topSection {
+  height: 66%;
+}
+
+header #bottomSection {
+  height: 33%;
+}
+
+main {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .imgPart {
+  width: 40%;
+  height: 100%;
+}
+
+main .imgPart img {
+  width: 100%;
+}
+
+main .textPart {
+  width: 60%;
+  height: 100%;
+  padding: 5%;
+}
+
+main .textPart p {
+  color: #fbf250;
+}
+
+main .textPart #mailLogo {
+  width: 10px;
+}
+/*# sourceMappingURL=style.css.map */
