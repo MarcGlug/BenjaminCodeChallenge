@@ -2,6 +2,16 @@
 
 $yellow: #fbf250;
 $bg-color:#000a28;
+$borderSize: 7px;
+
+/* MIXINS*/
+
+@mixin center(){
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 /*----------------------------------*/
 
@@ -13,36 +23,56 @@ html, body {
 body {
     background-color: $bg-color;
     position: relative;
+    height:100vh;
 }
 
 .contentBlock {
     width: 90vw;
     height: 90vh;
-    border: 5px solid $yellow;
-    position: relative;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, 0%);
+    border: $borderSize solid $yellow;
+    @include center;
 }
 
 header {
     height:30%;
     width:100%;
+    position: relative;
+    z-index: 15;
+    
 
     #topSection, #bottomSection {
         width: 100%;
-        border-bottom: 5px solid $yellow;
-        span {
-            color: $yellow;
+        border-bottom: $borderSize solid $yellow;
+        background-color: $bg-color;
+        overflow-x: hidden;
+        color: $yellow;
+        display: flex;
+        white-space: nowrap;
+
+        h1, h2 {
+            margin:0;
+            margin-right:50px;
+            display: inline-block;
+        }
+        
+        h1{
+            animation: rightmovement 20s linear infinite;
+        }
+
+        h2{
+            animation: leftmovement 13s linear infinite;
         }
     }
 
     #topSection{
         height: 66%;
+        font-size:4.5rem;
     }
 
     #bottomSection{
        height: 33%;
+       font-size:3rem;
+       display: flex;
     }
 }
 
@@ -51,19 +81,56 @@ main{
     display: flex;
 
     .imgPart{
-        width:40%;
+        position:relative;
+        width:50%;
         height:100%;
 
         img{
-            width:100%;
+            position: absolute;
+            bottom:0;
+            max-width: 100%;
+            max-height:100%;
+            z-index: 5;
+        }
+
+        #backCircle, #frontCircle {
+            background-color: $yellow;
+            border-radius: 50%;
+        }
+
+        #backCircle{
+            width: 500px;
+            height: 500px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            top: 30px;
+        }
+
+        #frontCircle {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left:70%;
+            z-index: 10;
         }
     }
 
     .textPart {
-        
-        width:60%;
+
+        width:50%;
         height:100%;
-        padding: 5%;
+        position: relative;
+
+        .text{
+            @include center;
+            width:350px;
+
+            img{
+                width:30px;
+                color: $yellow;
+            }
+        }
 
         p {
             color: $yellow;
@@ -73,5 +140,15 @@ main{
             width:10px;
         }
     }
+
+@keyframes leftmovement {
+    0% {transform: translateX( 0 )}
+    100% { transform: translateX(-1345px)};
+}
+
+@keyframes rightmovement {
+    0% { transform: translateX( -1005px )};
+    100% { transform: translateX( 0% )};
+}
 
 }
