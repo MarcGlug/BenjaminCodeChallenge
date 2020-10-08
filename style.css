@@ -143,6 +143,14 @@ main .textPart p {
   color: #fbf250;
 }
 
+main .textPart p svg {
+  width: 30px;
+}
+
+main .textPart p span {
+  vertical-align: top;
+}
+
 main .textPart #mailLogo {
   width: 10px;
 }

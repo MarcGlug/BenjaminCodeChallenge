@@ -143,6 +143,12 @@ main{
 
         p {
             color: $yellow;
+            svg {
+                width:30px;
+            }
+            span {
+                vertical-align: top;
+            }
         }
     
         #mailLogo{
