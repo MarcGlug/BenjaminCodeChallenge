@@ -66,11 +66,11 @@ header {
         }
         
         h1{
-            animation: rightmovement 20s linear infinite;
+            animation: rightmovement 40s linear infinite;
         }
 
         h2{
-            animation: leftmovement 13s linear infinite;
+            animation: leftmovement 26s linear infinite;
         }
     }
 
@@ -208,11 +208,11 @@ main{
 /*-------------------- ANIMATION --------------------*/
 @keyframes leftmovement {
     0% {transform: translateX( 0 )}
-    100% { transform: translateX(-1345px)};
+    100% { transform: translateX(-2690px)};
 }
 
 @keyframes rightmovement {
-    0% { transform: translateX( -1005px )};
+    0% { transform: translateX( -2010px )};
     100% { transform: translateX( 0% )};
 }
 

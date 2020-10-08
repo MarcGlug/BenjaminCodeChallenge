@@ -52,13 +52,13 @@ header #topSection h1, header #topSection h2, header #bottomSection h1, header #
 }
 
 header #topSection h1, header #bottomSection h1 {
-  -webkit-animation: rightmovement 20s linear infinite;
-          animation: rightmovement 20s linear infinite;
+  -webkit-animation: rightmovement 40s linear infinite;
+          animation: rightmovement 40s linear infinite;
 }
 
 header #topSection h2, header #bottomSection h2 {
-  -webkit-animation: leftmovement 13s linear infinite;
-          animation: leftmovement 13s linear infinite;
+  -webkit-animation: leftmovement 26s linear infinite;
+          animation: leftmovement 26s linear infinite;
 }
 
 header #topSection {
@@ -209,8 +209,8 @@ main .textPart #mailLogo {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1345px);
-            transform: translateX(-1345px);
+    -webkit-transform: translateX(-2690px);
+            transform: translateX(-2690px);
   }
 }
 @keyframes leftmovement {
@@ -219,15 +219,15 @@ main .textPart #mailLogo {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1345px);
-            transform: translateX(-1345px);
+    -webkit-transform: translateX(-2690px);
+            transform: translateX(-2690px);
   }
 }
 
 @-webkit-keyframes rightmovement {
   0% {
-    -webkit-transform: translateX(-1005px);
-            transform: translateX(-1005px);
+    -webkit-transform: translateX(-2010px);
+            transform: translateX(-2010px);
   }
   100% {
     -webkit-transform: translateX(0%);
@@ -237,8 +237,8 @@ main .textPart #mailLogo {
 
 @keyframes rightmovement {
   0% {
-    -webkit-transform: translateX(-1005px);
-            transform: translateX(-1005px);
+    -webkit-transform: translateX(-2010px);
+            transform: translateX(-2010px);
   }
   100% {
     -webkit-transform: translateX(0%);
