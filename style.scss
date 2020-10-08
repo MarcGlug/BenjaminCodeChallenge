@@ -109,11 +109,10 @@ main{
         }
 
         #backCircle{
-            width: 500px;
-            height: 500px;
             position: relative;
+            bottom:0px;
             margin-left: 10%;
-            top: 30px;
+            
         }
 
         #frontCircle {
@@ -121,6 +120,7 @@ main{
             width: 50px;
             height: 50px;
             left:70%;
+            bottom: 30px;
             z-index: 10;
         }
     }
@@ -132,7 +132,7 @@ main{
 
         .text{
             
-            width:350px;
+            width:250px;
             @include hCenter;
 
             img{
@@ -180,6 +180,15 @@ main{
             order:1;
             width:50%;
             height:100%;
+            
+            #backCircle{
+                max-width: 500px;
+                max-height: 500px;
+                position: relative;
+                margin-left: 10%;
+                top:30px;
+                
+            }
         }
 
         .textPart {
@@ -188,6 +197,7 @@ main{
             height:100%;
 
             .text{
+                width:350px;
                 @include center;
             }
         }

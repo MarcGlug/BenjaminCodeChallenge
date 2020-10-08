@@ -105,11 +105,9 @@ main .imgPart #backCircle, main .imgPart #frontCircle {
 }
 
 main .imgPart #backCircle {
-  width: 500px;
-  height: 500px;
   position: relative;
+  bottom: 0px;
   margin-left: 10%;
-  top: 30px;
 }
 
 main .imgPart #frontCircle {
@@ -117,6 +115,7 @@ main .imgPart #frontCircle {
   width: 50px;
   height: 50px;
   left: 70%;
+  bottom: 30px;
   z-index: 10;
 }
 
@@ -128,7 +127,7 @@ main .textPart {
 }
 
 main .textPart .text {
-  width: 350px;
+  width: 250px;
   position: relative;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -179,6 +178,13 @@ main .textPart #mailLogo {
     width: 50%;
     height: 100%;
   }
+  main .imgPart #backCircle {
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
+    margin-left: 10%;
+    top: 30px;
+  }
   main .textPart {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -187,6 +193,7 @@ main .textPart #mailLogo {
     height: 100%;
   }
   main .textPart .text {
+    width: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
